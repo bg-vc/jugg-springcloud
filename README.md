@@ -6,7 +6,6 @@ nohup java -Xms20m -Xmx50m -jar jugg-eureka-server-1.0.0.jar --spring.profiles.a
 配置管理：enableEurekaClient + spring-cloud-conifg + spring-cloud-bus + kafka-binder
 jugg-config-server:
 nohup java -Xms50m -Xmx100m -jar jugg-config-server-1.0.0.jar >jugg-config-server.out 2>&1 &
-获取配置信息: http://localhost:2101/jugg-gateway/dev/master
 
 服务网关: enableDiscoveryClient + restTemplate-ribbon + hystrix
 jugg-gateway:
