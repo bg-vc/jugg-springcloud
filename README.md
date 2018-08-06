@@ -6,15 +6,10 @@ nohup java -Xms20m -Xmx50m -jar jugg-eureka-server-1.0.0.jar --spring.profiles.a
 配置管理：enableEurekaClient + spring-cloud-conifg + spring-cloud-bus + kafka-binder
 jugg-config-server
 
-服务网关: enableDiscoveryClient + restTemplate-ribbon + hystrix
-jugg-gateway
+服务网关jugg-gateway: enableDiscoveryClient + restTemplate-ribbon + hystrix
 
-服务提供者: enableDiscoveryClient
-jugg-payment
+服务提供者jugg-payment: enableDiscoveryClient
 
-Hystrix监控: hystrix-dashboard + hystrix-turbine
-jugg-hystrix-dashboard
-jugg-hystrix-turbine
+Hystrix监控jugg-hystrix-dashboard jugg-hystrix-turbine: hystrix-dashboard + hystrix-turbine
 
-服务链接跟踪: sleuth + zikpin + mysql + kafka
-pay-zipkin-server
+服务链接跟踪 pay-zipkin-server: sleuth + zikpin + mysql + kafka
