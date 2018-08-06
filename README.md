@@ -13,8 +13,8 @@ jugg-gateway
 jugg-payment
 
 Hystrix监控: hystrix-dashboard + hystrix-turbine
-jugg-hystrix-dashboard：
-jugg-hystrix-turbine：
+jugg-hystrix-dashboard
+jugg-hystrix-turbine
 
 服务链接跟踪: sleuth + zikpin + mysql + kafka
-pay-zipkin-server:
+pay-zipkin-server
