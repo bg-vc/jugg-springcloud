@@ -4,23 +4,17 @@ nohup java -Xms20m -Xmx50m -jar jugg-eureka-server-1.0.0.jar --spring.profiles.a
 nohup java -Xms20m -Xmx50m -jar jugg-eureka-server-1.0.0.jar --spring.profiles.active=server2 >jugg-eureka-server2.out 2>&1 &
 
 配置管理：enableEurekaClient + spring-cloud-conifg + spring-cloud-bus + kafka-binder
-jugg-config-server:
-nohup java -Xms50m -Xmx100m -jar jugg-config-server-1.0.0.jar >jugg-config-server.out 2>&1 &
+jugg-config-server
 
 服务网关: enableDiscoveryClient + restTemplate-ribbon + hystrix
-jugg-gateway:
-nohup java -Xms50m -Xmx100m -jar jugg-gateway-1.0.0.jar >jugg-gateway.out 2>&1 &
+jugg-gateway
 
 服务提供者: enableDiscoveryClient
-jugg-payment: 
-nohup java -Xms50m -Xmx100m -jar jugg-payment-1.0.0.jar >jugg-payment.out 2>&1 &
+jugg-payment
 
-Hystrix监控: hystrix-dashboard + pay-hystrix-turbine
+Hystrix监控: hystrix-dashboard + hystrix-turbine
 jugg-hystrix-dashboard：
-nohup java -Xms50m -Xmx100m -jar jugg-hystrix-dashboard-1.0.0.jar >jugg-hystrix-dashboard.out 2>&1 &
 jugg-hystrix-turbine：
-nohup java -Xms50m -Xmx100m -jar jugg-hystrix-turbine-1.0.0.jar >jugg-hystrix-turbine.out 2>&1 &
 
 服务链接跟踪: sleuth + zikpin + mysql + kafka
 pay-zipkin-server:
-nohup java -Xms50m -Xmx100m -jar jugg-zipkin-server-1.0.0.jar >jugg-zipkin-server.out 2>&1 &
