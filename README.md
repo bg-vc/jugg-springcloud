@@ -18,7 +18,8 @@ enableDiscoveryClient + restTemplate-ribbon + hystrix
 ```
 
 ## 服务提供者
-```jugg-payment enableDiscoveryClient
+```
+jugg-payment enableDiscoveryClient
 ```
 ## Hystrix监控
 ```
